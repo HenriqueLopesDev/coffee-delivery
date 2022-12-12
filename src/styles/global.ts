@@ -9,9 +9,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background: ${props => props.theme['background']};
+        background: ${(props) => props.theme.background};
         -webkit-font-smoothing: antialiased;
-        padding: 0 10rem;
+        padding: 0 10rem 10rem 10rem;
     }
 
     body, input, button, textarea{
@@ -20,4 +20,3 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 `
-
